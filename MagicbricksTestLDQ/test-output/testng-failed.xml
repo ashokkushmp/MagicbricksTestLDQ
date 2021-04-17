@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Magicbricks Test Automation suite ]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="testcase.analyzer.RetryListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="MMB Test cases(failed)">
+    <classes>
+      <class name="com.mmb.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="switchContactWiseByName"/>
+          <include name="tearDown"/>
+          <include name="verifycontactPageAllTabClick"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.ContactsPageTest -->
+      <class name="com.mmb.qa.testcases.ProfileTest">
+        <methods>
+          <include name="verifyProfileTabpage"/>
+          <include name="verifyProfileTab"/>
+          <include name="verifyProfileTabAllLink"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.ProfileTest -->
+      <class name="com.mmb.qa.testcases.AccountSummaryTest">
+        <methods>
+          <include name="verifySubscriptionpartLink"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyAccountSummaryTab"/>
+          <include name="verifyAccountSummarypage"/>
+          <include name="verifyResponseLableLink"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.AccountSummaryTest -->
+      <class name="com.mmb.qa.testcases.SignUpPageTest">
+        <methods>
+          <include name="verifyTheLogOutLableTest"/>
+          <include name="validateCreateNewUser"/>
+          <include name="tearDown"/>
+          <include name="clickOnTheSignUpLinkTest"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.SignUpPageTest -->
+      <class name="com.mmb.qa.testcases.SubscriptionPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
+          <include name="verifySubscriptionTabAllLink"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.SubscriptionPageTest -->
+      <class name="com.mmb.qa.testcases.PostPGPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyfilleddetailsforPG" invocation-numbers="0"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.PostPGPageTest -->
+      <class name="com.mmb.qa.testcases.PGDashboardPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyPGDashboardTabLinkclick"/>
+        </methods>
+      </class> <!-- com.mmb.qa.testcases.PGDashboardPageTest -->
+    </classes>
+  </test> <!-- MMB Test cases(failed) -->
+</suite> <!-- Failed suite [Magicbricks Test Automation suite ] -->
