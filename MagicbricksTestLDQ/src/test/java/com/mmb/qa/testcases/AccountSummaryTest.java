@@ -11,7 +11,7 @@ import com.mmb.qa.pages.HomePage;
 import com.mmb.qa.pages.LoginPage;
 
 public class AccountSummaryTest extends TestBase{
-	
+	// this comment was created in branch 1
 	LoginPage loginpage;
 	HomePage homePage;
 	ContactsPage contactsPage;
